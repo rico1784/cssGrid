@@ -10,25 +10,28 @@ body {
     font-size: 62.5%;
 }
 
-.wrapper {
+#wrapper {
     font-family: BenchNine, serif;
-    width:100%;
     color:black;
+    width:100%;
 
 }
 
 header {
-    background-color: chartreuse;
+    text-align: center;
+
 }
 
 nav {
 
-    background-color: #941515;
+    background-color: #ae2123;
 }
 
 section{
-
-    background-color: #9c8a13;
+    font-size: 1.6em;
+    box-shadow: 2px 2px 5px
+    #aaa;
+    margin: 0 10px 0 10px;
 }
 footer{
 
@@ -41,7 +44,7 @@ footer{
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8,auto);
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     grid-template-areas:
@@ -86,10 +89,101 @@ footer{
 
 
 .main-header img{
-    width:20%;
+    width:50%;
 }
 
 
+
+/*Mise en page*/
+header h1{
+    font-size: 5em;
+    color: #527bea;
+    font-family: ChelaOne, serif;
+}
+
+.main-nav li{
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0.5em;
+
+}
+
+#search-input {
+    border-radius: 20px;
+    border: none;
+    margin: 0 0 0.5em 0.5em;
+
+}
+
+.section_item{
+    padding: 1em;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/*Propriétés communes à plusieurs balise*/
+.btn_titre {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    color: #ffffff;
+    padding: 1em;
+    border: none;
+    text-align: center;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.btn{
+    background-color: #527bea;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 0.8em auto;
+}
+
+
+
+
+/*Tableau horaire*/
+table.blueTable {
+    background-color: #FFFFFF;
+    width: 95%;
+   margin: 20px auto;
+    text-align: center;
+}
+table.blueTable td, table.blueTable th {
+    padding: 3px 2px;
+}
+table.blueTable tr:nth-child(even) {
+    background: #C4C4C4;
+}
+table.blueTable thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+}
+table.blueTable thead th {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+table.blueTable tfoot td {
+    font-size: 14px;
+}
+table.blueTable tfoot .links {
+    text-align: right;
+}
+table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
 
 
 

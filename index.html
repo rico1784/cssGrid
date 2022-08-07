@@ -18,21 +18,81 @@
 
     <header class="main-header" role="banner" >
         <img src="img/logo.png" alt="">
-        <form id="search" role="search">
-            <input type="search" id="search-input" name="search" spellcheck="false">
-            <span class="icone-loupe" type="submit"></span>
-        </form>
+        <h1>La passion des films</h1>
     </header>
     <nav class="main-nav">
         <ul role="navigation">
-            <li>dsds</li>
-            <li>sdsd</li>
-            <li>sddsd</li>
-            <li>sds</li>
+            <li>Programme</li>
+            <li>Actualités</li>
+            <li>Jeune public</li>
+            <li>Tarifs</li>
+            <li>Accés</li>
         </ul>
+        <form id="search" role="search">
+            <input type="search" id="search-input" placeholder="rechercher" name="search" spellcheck="false">
+        </form>
     </nav>
-        <section class="laUne">A la une</section>
-        <section class="horaire">horaire</section>
+        <section class="laUne">
+            <h2 class="btn_titre">La UNE</h2>
+            <img class="section_item" width="100%"
+                 src="img/cinema.jpg"
+                 srcset="
+                    img/small/cinema.jpg 499w,
+                    img/cinema.jpg 960w"
+                 sizes="(min-width:600px)50vw, 100vw"
+
+                 alt="Facade de cinema"  >
+
+            <article class="section_item">
+                <h3>D'où vient-il?</h3>
+                <p>
+                    Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire.
+                    Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C.,
+                    le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé
+                    à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant
+                     tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum.
+                    Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum"
+                    (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance,
+                    est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
+
+                    L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux.
+                    Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale,
+                    accompagnée de la traduction anglaise de H. Rackham (1914).
+                </p>
+            </article>
+            <button class="btn section_item" type="button">
+                Réserver
+            </button>
+            <button class="btn section_item" type="button">
+                Commander l'affiche
+            </button>
+        </section>
+        <section class="horaire">
+            <h2 class="btn_titre">Horaires</h2>
+            <table class="blueTable">
+                <thead>
+                <tr>
+                    <th>head1</th>
+                    <th>head2</th>
+                    <th>head3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>cell1_1</td><td>cell2_1</td><td>cell3_1</td></tr>
+                <tr>
+                    <td>cell1_2</td><td>cell2_2</td><td>cell3_2</td></tr>
+                <tr>
+                    <td>cell1_3</td><td>cell2_3</td><td>cell3_3</td></tr>
+                <tr>
+                    <td>cell1_4</td><td>cell2_4</td><td>cell3_4</td></tr>
+                <tr>
+                    <td>cell1_5</td><td>cell2_5</td><td>cell3_5</td></tr>
+                </tbody>
+                </tr>
+            </table>
+
+        </section>
         <section class="adresse">adresse</section>
         <section class="portfolio">porfolio</section>
         <section class="semaine">semaine</section>
