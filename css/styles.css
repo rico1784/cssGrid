@@ -1,4 +1,4 @@
-/*Paramètres principaux*/
+/***********Paramètres principaux***********/
 * {
     box-sizing: border-box;
     line-height: 1.5;
@@ -33,12 +33,12 @@ section{
 
     box-shadow: 2px 2px 5px
     #aaa;
-    margin: 0 10px 0 10px;
 }
 
 
+/*********** Mise en page du contenu principale - vue de base (mobile) ***********/
 
-/*Mise en page du contenu principale*/
+/*Propriétés de la grille vue mobile*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -89,8 +89,6 @@ section{
 }
 
 
-
-
 /*Propriétés des textes et titre et */
 header h1{
     font-size: 5em;
@@ -109,6 +107,8 @@ p {
     line-height: 1.5
 }
 
+
+/*----menu NAV*/
 .main-nav li{
 
     font-size: 2em;
@@ -128,20 +128,15 @@ p {
 
 }
 
-.section_item{
-    border: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: left;
-}
+
+/*Propriétés du footer*/
 
 .items-footer-container{
     width:80%;
     margin: 10px auto;
     text-align: left;
     justify-content: center;
-    font-size: 2em
+    font-size: 2em;
 }
 
 .item-list {
@@ -158,10 +153,9 @@ p {
     color: #0c0e0c;
     font-size: 3vh;
 }
-.main-footer, .main-nav a:hover {
-    color: #999;
-}
-/*-------------------------------------------------*/
+
+
+/*Propriétés pour le survol de l'image portfolio*/
 .legende-survol {
     position: absolute;
     padding-top: 30%;
@@ -198,10 +192,6 @@ p {
 }
 
 
-/*--------------------------------------------------*/
-
-
-
 
 /*Propriétés communes à plusieurs div*/
 .btn_titre {
@@ -229,8 +219,23 @@ p {
     color: #999;
 }
 
+.main-footer, .main-nav a:hover {
+    color: #999;
+}
+
+.section_item{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .p1{
     padding: 1em;
+}
+.m0-10{
+    margin: 0 10px 0 10px;
 }
 
 .mt20{
@@ -240,6 +245,7 @@ margin-top: 30px;
 .relative{
     position: relative
 }
+
 
 /*Tableau horaire*/
 table.blueTable {
