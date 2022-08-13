@@ -219,7 +219,7 @@ p {
     color: #999;
 }
 
-.main-footer, .main-nav a:hover {
+.main-footer a:hover, .main-nav a:hover, article a:hover {
     color: #999;
 }
 
@@ -231,6 +231,13 @@ p {
     text-align: left;
 }
 
+article a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ae2123;
+}
+
+
 .p1{
     padding: 1em;
 }
@@ -239,12 +246,13 @@ p {
 }
 
 .mt20{
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 .relative{
     position: relative
 }
+
 
 
 /*Tableau horaire*/
