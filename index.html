@@ -9,30 +9,32 @@
     <!-- CSS local -->
     <link href="css/reset.css" media="screen" rel="stylesheet">
     <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
-
-
+<!--Titre page-->
     <title>Club 108</title>
 </head>
 <body>
 <div id="wrapper" class="grid-container">
-
-    <header class="main-header" role="banner" >
-        <img src="img/logo.png" alt="">
-        <h1>La passion des films</h1>
+<!--Header - Titre et logo-->
+    <header class="main-header relative" role="banner" >
+        <img src="img/logo.png" alt="" width="350" height="164" class="flex flex-l">
+        <h1 class="titre">La passion des films</h1>
     </header>
-    <nav class="main-nav">
-        <ul role="navigation">
-            <li>Programme</li>
-            <li>Actualités</li>
-            <li>Jeune public</li>
-            <li>Tarifs</li>
-            <li>Accés</li>
+<!--    Menu de navigation-->
+    <nav class="main-nav flex">
+        <ul class="flex" role="navigation">
+            <li><a href="">Programme</a></li>
+            <li><a href="">Actualités</a></li>
+            <li><a href="">Jeune public</a></li>
+            <li><a href="">Tarifs</a></li>
+            <li><a href="">Accés</a></li>
         </ul>
-        <form id="search" role="search">
-            <input type="search" id="search-input" placeholder="rechercher" name="search" spellcheck="false">
+        <form id="search" role="search" class="">
+            <input type="search" id="search-input" placeholder="  Rechercher" name="search" spellcheck="false" >
         </form>
     </nav>
-        <section class="laUne">
+
+<!--    Section partie LaUne-->
+        <section class="laUne p1">
             <h2 class="btn_titre">La UNE</h2>
             <img class="section_item" width="100%"
                  src="img/cinema.jpg"
@@ -60,43 +62,144 @@
                     accompagnée de la traduction anglaise de H. Rackham (1914).
                 </p>
             </article>
-            <button class="btn section_item" type="button">
-                Réserver
-            </button>
-            <button class="btn section_item" type="button">
-                Commander l'affiche
-            </button>
+            <div class="button-group">
+                <button class="btn section_item button-inline" type="button">
+                    Réserver
+                </button>
+                <button class="btn section_item button-inline" type="button">
+                    Commander l'affiche
+                </button>
+            </div>
+
         </section>
-        <section class="horaire">
+
+<!--    Section partie horaire-->
+        <section class="horaire p1">
             <h2 class="btn_titre">Horaires</h2>
+<!--            Tableau des Horaires-->
             <table class="blueTable">
                 <thead>
                 <tr>
-                    <th>head1</th>
-                    <th>head2</th>
-                    <th>head3</th>
+                    <th>Heure</th>
+                    <th>Film</th>
+                    <th>Salle</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>cell1_1</td><td>cell2_1</td><td>cell3_1</td></tr>
+                    <td>12h</td><td>La guerre des Etoile</td><td>1</td></tr>
                 <tr>
-                    <td>cell1_2</td><td>cell2_2</td><td>cell3_2</td></tr>
+                    <td>14h</td><td>Shrek</td><td>1</td></tr>
                 <tr>
-                    <td>cell1_3</td><td>cell2_3</td><td>cell3_3</td></tr>
+                    <td>14h</td><td>TopGun Maverick</td><td>2</td></tr>
                 <tr>
-                    <td>cell1_4</td><td>cell2_4</td><td>cell3_4</td></tr>
+                    <td>16h</td><td>Mission Impossible</td><td>1</td></tr>
                 <tr>
-                    <td>cell1_5</td><td>cell2_5</td><td>cell3_5</td></tr>
+                    <td>18h</td><td>Le coup de parapluie</td><td>2</td></tr>
                 </tbody>
                 </tr>
             </table>
 
+<!--            Section partie adresse-->
         </section>
-        <section class="adresse">adresse</section>
-        <section class="portfolio">porfolio</section>
-        <section class="semaine">semaine</section>
-    <footer class="main-footer" role="contentinfo">footer</footer>
+        <section class="adresse p1">
+            <h2 class="btn_titre p1">Adresse</h2>
+            <div class="hcard ">
+                <h2 class="p-org mt1">Le Club 108</h2>
+                <address>
+                    <span class="p-street-address">118, rue du club</span>
+                    <span class="p-locality">SaintPierre</span>
+                    <span class="p-postal-code">342233</span>
+                </address>
+            </div>
+        </section>
+
+<!--Section partie portfolio-->
+        <section class="portfolio p1">
+            <h2 class="btn_titre">Portfolio</h2>
+            <div class="boite-survol relative">
+            <img class="section_item" width="100%"
+                 src="img/fox.jpg"
+                 srcset="
+                    img/small/fox.jpg 499w,
+                    img/fox.jpg 960w"
+                 sizes="(min-width:600px)50vw, 100vw"
+                 alt="Vue d'un cinema">
+
+            <div class="legende-survol">
+                <p class="box">
+                    <a href="#">Regarder</a>
+                </p>
+                </div>
+            </div>
+        </section>
+
+<!--  Section partie Semaine-->
+        <section class="semaine p1">
+            <h2 class="btn_titre">Cette semaine</h2>
+            <div class="grid_article">
+            <article class="section_item demi">
+                <img class="section_item" width="100%"
+                     src="img/cinema.jpg"
+                     srcset="
+                    img/small/cinema.jpg 499w,
+                    img/cinema.jpg 960w"
+                     sizes="(min-width:600px)50vw, 100vw"
+
+                     alt="Facade de cinema"  >
+                <h3>D'où vient-il?</h3>
+                <p>
+                    Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire.
+                    Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C.,
+                    le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé
+                    à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant
+
+                </p>
+            </article>
+
+            <article class="section_item demi mt20">
+                <img class="section_item" width="100%"
+                     src="img/cinema.jpg"
+                     srcset="
+                    img/small/cinema.jpg 499w,
+                    img/cinema.jpg 960w"
+                     sizes="(min-width:600px)50vw, 100vw"
+
+                     alt="Facade de cinema"  >
+                <h3>D'où vient-il?</h3>
+                <p>
+                    Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire.
+                    Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C.,
+                    le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé
+                    à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant
+
+                </p>
+            </article>
+            </div>
+        </section>
+<!--    Pied de page principale-->
+    <footer class="main-footer" role="contentinfo">
+
+        <ul class="items-footer-container">
+            <li class="item-list"><a href="">CLUB 108</a></li>
+            <li class="item-list"><a href="">Tarifs et horaire</a></li>
+            <li class="item-list"><a href="">A proximité</a></li>
+            <li class="item-list"><a href="">Séances privées</a></li>
+            <li class="item-list"><a href="">Parking et accès</a></li>
+            <li class="item-list"><a href="">Carte club</a></li>
+            <li class="item-list"><a href="">Jobs étudiants</a></li>
+            <li class="item-list"><a href="">Espace partenaire</a></li>
+            <li class="item-list"><a href="">Parking et accès</a></li>
+            <li class="item-list"><a href="">Carte club</a></li>
+            <li class="item-list"><a href="">Jobs étudiants</a></li>
+            <li class="item-list"><a href="">Espace partenaire</a></li>
+            <li class="item-list"><a href="">Tarifs et horaire</a></li>
+            <li class="item-list"><a href="">A proximité</a></li>
+            <li class="item-list"><a href="">Séances privées</a></li>
+
+        </ul>
+        <img src="img/logo.png" alt="" width="175" height="82">
+    </footer>
 
 
 </div>

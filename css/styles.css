@@ -14,7 +14,9 @@ body {
     font-family: BenchNine, serif;
     color:black;
     width:100%;
-
+    max-width: 1850px;
+    margin: 0 auto;
+    font-size: 1.25em;
 }
 
 header {
@@ -28,19 +30,15 @@ nav {
 }
 
 section{
-    font-size: 1.6em;
+
     box-shadow: 2px 2px 5px
     #aaa;
     margin: 0 10px 0 10px;
 }
-footer{
-
-    background-color: rgba(231, 222, 222, 0.51);
-
-}
 
 
-/*Mise en page contenu principale*/
+
+/*Mise en page du contenu principale*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -60,6 +58,7 @@ footer{
 
 .main-header{
     grid-area: main-header;
+
 }
 .main-nav{
     grid-area: main-nav;
@@ -85,38 +84,51 @@ footer{
 }
 .main-footer{
     grid-area: main-footer;
+    display: flex;
+    background-color: #ededed;
 }
 
 
-.main-header img{
-    width:50%;
-}
 
 
-
-/*Mise en page*/
+/*Propriétés des textes et titre et */
 header h1{
     font-size: 5em;
     color: #527bea;
     font-family: ChelaOne, serif;
 }
 
+article h3{
+    font-size: 1.2em ;
+    font-family: ChelaOne, serif;
+    margin-top: 30px;
+
+}
+
+p {
+    line-height: 1.5
+}
+
 .main-nav li{
-    color: #ffffff;
+
     font-size: 2em;
     margin: 0.5em;
+}
 
+.main-nav a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 #search-input {
     border-radius: 20px;
     border: none;
-    margin: 0 0 0.5em 0.5em;
+    margin: 0.8em;
+    padding:0.8em;
 
 }
 
 .section_item{
-    padding: 1em;
     border: none;
     display: flex;
     flex-direction: column;
@@ -124,74 +136,144 @@ header h1{
     text-align: left;
 }
 
+.items-footer-container{
+    width:80%;
+    margin: 10px auto;
+    text-align: left;
+    justify-content: center;
+    font-size: 2em
+}
 
-/*Propriétés communes à plusieurs balise*/
+.item-list {
+    padding: 5px;
+    width: 300px;
+    margin: 10px 2px;
+    display: inline-block;
+}
+
+
+.main-footer a {
+    display: block;
+    text-decoration: none;
+    color: #0c0e0c;
+    font-size: 3vh;
+}
+.main-footer, .main-nav a:hover {
+    color: #999;
+}
+/*-------------------------------------------------*/
+.legende-survol {
+    position: absolute;
+    padding-top: 30%;
+    margin: 10px auto;
+    width: 90%;
+    left:0;
+    bottom:0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.32);
+    text-align: center;
+    color: #fff;
+    display: none;
+    top: 0;
+
+}
+
+.boite-survol:hover .legende-survol {
+    display: block;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 200px;
+    padding: 10px;
+    background-color: #ae2123;
+    margin: 0 auto;
+    display: block;
+}
+
+.box a:hover {
+    color:#ccc;
+    background-color: #3d3333;
+}
+
+
+/*--------------------------------------------------*/
+
+
+
+
+/*Propriétés communes à plusieurs div*/
 .btn_titre {
-    width: 150px;
-    height: 50px;
-    background-color: red;
+    width: 120px;
+    background-color: #ae2123;
     color: #ffffff;
     padding: 1em;
     border: none;
     text-align: center;
-    margin: 0.5em 0 0.5em 1em;
+    margin-bottom: 1em;
+
 }
 
 .btn{
     background-color: #527bea;
+    padding: 1em;
     color: #ffffff;
     border-radius: 20px;
     margin: 0.8em auto;
+    transition-duration: 0.8s;
 }
 
+.btn:hover {
+    background-color: #baf1cb;
+    color: #999;
+}
 
+.p1{
+    padding: 1em;
+}
 
+.mt20{
+margin-top: 30px;
+}
+
+.relative{
+    position: relative
+}
 
 /*Tableau horaire*/
 table.blueTable {
     background-color: #FFFFFF;
-    width: 95%;
-   margin: 20px auto;
+    width: 100%;
+    margin: 20px auto;
     text-align: center;
 }
 table.blueTable td, table.blueTable th {
     padding: 3px 2px;
 }
 table.blueTable tr:nth-child(even) {
-    background: #C4C4C4;
+    background: #858585;
 }
 table.blueTable thead {
-    background: #1C6EA4;
-    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: #527bea;
+
 }
 table.blueTable thead th {
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
 }
-table.blueTable tfoot td {
-    font-size: 14px;
-}
-table.blueTable tfoot .links {
-    text-align: right;
-}
-table.blueTable tfoot .links a{
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
-}
 
 
 
-@media screen and (min-width: 768px){
+
+
+
+@media screen and (min-width: 940px){
 
     .grid-container{
         grid-template-columns:  repeat(8, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: 0.5fr auto auto auto auto auto auto ;
         grid-template-areas:
     "main-header main-header main-header main-header main-header main-header main-header main-header"
     "main-nav main-nav main-nav main-nav main-nav main-nav main-nav main-nav"
@@ -204,7 +286,71 @@ table.blueTable tfoot .links a{
 
 
     }
+    /*Paramètres principaux*/
+    #wrapper {
+        font-size: 1.5em;
+    }
+
+
+    /*Propriétés communes à plusieurs balise*/
+    .mt1{
+        margin-top: 3em;
+    }
+
+    .mt20{
+        margin-top: 0;
+    }
+
+
+
+    /*Mise en page des articles*/
+
+    .grid_article{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        grid-gap: 1em;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .demi{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .flex-l{
+        justify-content: left;
+    }
+
+    .titre{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+
+
+    .button-group{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .button-inline{
+        margin: 10px 30px;
+        display: inline-block;
+    }
+
 }
+
 
 
 
